@@ -9,3 +9,6 @@ The topology found in topo_sdci.py contains a python script that can be launched
 `sudo mn --custom topo_sdci.py --topo=mytopo --controller=remote,ip=10.0.2.15,port=2253 --mac`
 
 
+
+# Attention
+You need to launch the mininet topology before the Docker in Docker used for additional gateways. Otherwise it "take" IP adress already assigned to Server or GI from the topology.
